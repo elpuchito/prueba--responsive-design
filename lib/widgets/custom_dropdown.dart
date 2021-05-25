@@ -22,8 +22,14 @@ class _CustomDropDownMenuState extends State<CustomDropDownMenu> {
     String dropdownValue = initialValue;
     return Expanded(
       child: Container(
-        decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(3)),
+        decoration: BoxDecoration(boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.3),
+            spreadRadius: 1,
+            blurRadius: 2,
+            offset: Offset(0, 2), // changes position of shadow
+          ),
+        ], color: Colors.white, borderRadius: BorderRadius.circular(3)),
         height: 40,
         padding: EdgeInsets.symmetric(horizontal: 10),
         child: DropdownButton<String>(

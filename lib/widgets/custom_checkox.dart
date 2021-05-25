@@ -34,6 +34,14 @@ class _CustomCheck2State extends State<CustomCheck2> {
       child: Container(
           // height: 30,
           decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.3),
+                spreadRadius: 1,
+                blurRadius: 2,
+                offset: Offset(0, 2), // changes position of shadow
+              ),
+            ],
             color: Colors.white,
             borderRadius: BorderRadius.circular(5),
           ),
@@ -50,11 +58,14 @@ class _CustomCheck2State extends State<CustomCheck2> {
                 },
               ),
               SizedBox(
-                width: 8,
+                width: 6,
               ),
               Text(
                 title,
-                style: TextStyle(fontSize: 10),
+                style: TextStyle(
+                    fontSize: 10,
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 width: 8,

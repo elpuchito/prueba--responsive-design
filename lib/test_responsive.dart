@@ -160,12 +160,16 @@ class MobileBar extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // SizedBox(
-          //   height: 12,
-          // ),
+          SizedBox(
+            height: 8,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text('Agencias y sitios de interes en:')],
+            children: [
+              Text('Agencias y sitios de interes en:',
+                  style: TextStyle(
+                      fontFamily: 'Montserrat', fontWeight: FontWeight.w500))
+            ],
           ),
           SizedBox(
             height: 8,
@@ -209,6 +213,8 @@ class RowDesktopBar extends StatelessWidget {
               children: [
                 Text(
                   'Agencias y sitios de interes en:',
+                  style: TextStyle(
+                      fontFamily: 'Montserrat', fontWeight: FontWeight.w500),
                 ),
                 SizedBox(
                   width: 20,
