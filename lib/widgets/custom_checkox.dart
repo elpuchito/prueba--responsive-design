@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomCheck2 extends StatefulWidget {
   final String title;
 
-  const CustomCheck2({Key? key, required this.title}) : super(key: key);
+  CustomCheck2({Key? key, required this.title}) : super(key: key);
   @override
   _CustomCheck2State createState() => _CustomCheck2State(title: title);
 }
@@ -32,6 +32,7 @@ class _CustomCheck2State extends State<CustomCheck2> {
       // width: 130,
       // height: 30,
       child: Container(
+          // height: 30,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(5),
@@ -51,7 +52,10 @@ class _CustomCheck2State extends State<CustomCheck2> {
               SizedBox(
                 width: 8,
               ),
-              Text(title),
+              Text(
+                title,
+                style: TextStyle(fontSize: 10),
+              ),
               SizedBox(
                 width: 8,
               ),

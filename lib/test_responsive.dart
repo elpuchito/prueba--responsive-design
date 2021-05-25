@@ -207,7 +207,9 @@ class RowDesktopBar extends StatelessWidget {
             flex: 2,
             child: Row(
               children: [
-                Text('Agencias y sitios de interes en:'),
+                Text(
+                  'Agencias y sitios de interes en:',
+                ),
                 SizedBox(
                   width: 20,
                 ),
