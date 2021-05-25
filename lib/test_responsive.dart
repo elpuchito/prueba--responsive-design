@@ -230,17 +230,18 @@ class RowDesktopBar extends StatelessWidget {
         Flexible(
           flex: 1,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              SizedBox(
-                width: 40,
-              ),
-              Container(child: AgenciasCheckBox()),
+              // Flexible(
+              //   child: SizedBox(
+              //     width: 60,
+              //   ),
+              // ),
+              AgenciasCheckBox(),
               SizedBox(
                 width: 8,
               ),
-              Flexible(
-                child: PuntosDeVentaCheckbox(),
-              ),
+              PuntosDeVentaCheckbox(),
               SizedBox(
                 width: 8,
               ),
