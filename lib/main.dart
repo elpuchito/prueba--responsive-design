@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:prueba/test_responsive.dart';
+import 'package:prueba/prueba_alex.dart';
+import 'package:prueba/test_responsive_agencias.dart';
+import 'package:prueba/viajero_expreso_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Montserrat',
         primarySwatch: Colors.amber,
       ),
-      home: App(),
+      home: ViajeroExpressoApp(),
     );
   }
 }
